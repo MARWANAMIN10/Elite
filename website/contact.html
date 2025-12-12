@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Real Estate - Contact</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Elite Real Estate</div>
+        <ul class="nav-links">
+            <li><a href="home.html" id="nav-home">Home</a></li>
+            <li><a href="properties.html" id="nav-properties">Properties</a></li>
+            <li><a href="profile.html" id="nav-profile">Profile</a></li>
+            <li><a href="contact.html" id="nav-contact" class="active-link">Contact</a></li>
+            <li><a href="index.html" id="nav-logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <button onclick="showPage('company-info-page')"  class="company-info-btn">
+    <li><a href="#company-info-page" id="nav-company">📋 View Company Information</a></li>
+</button>
+        <h2 class="section-title">Contact Agent</h2>
+        <p class="section-subtitle">For property inquiry or general questions</p>
+        
+        <form id="contact-form" class="contact-form-style">
+            <div class="form-group">
+                <label for="contact-property">Property Interested In (Optional)</label>
+                <input type="text" id="contact-property" placeholder="Enter property name or type 'General Inquiry'">
+            </div>
+            
+            <div class="form-group">
+                <label for="contact-name">Your Name *</label>
+                <input type="text" id="contact-name" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="contact-email">Your Email *</label>
+                <input type="email" id="contact-email" placeholder="Your Email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="contact-phone">Your Phone (Optional)</label>
+                <input type="tel" id="contact-phone" placeholder="Your Phone">
+            </div>
+            
+            <div class="form-group">
+                <label for="contact-message">Your Message *</label>
+                <textarea id="contact-message" placeholder="Your Message (e.g., Request a viewing, ask about financing, general questions)" rows="6" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="contact-agent">Preferred Agent (Optional)</label>
+                <select id="contact-agent">
+                    <option value="">Any Available Agent</option>
+                    <option value="Marwan Ahmed">Eng/ Marwan Ahmed</option>
+                    <option value="Abdullah Mahmoud">Eng/ Abdullah Mahmoud</option>
+                    <option value="Ahmed Walid">Eng/ Ahmed Walid</option>
+                    <option value="Ahmed Abdelal">Eng/ Ahmed Abdelal</option>
+                    <option value="Mohamed Ashraf">Eng/ Mohamed Ashraf</option>
+                    <option value="Mohamed Rafat">Eng/ Mohamed Rafat</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn">Send Inquiry</button>
+        </form>
+        
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Office Address:</strong> 123 Real Estate St, Cairo, Egypt</p>
+            <p><strong>Phone:</strong> +20 123 456 7890</p>
+            <p><strong>Email:</strong> info@eliterealestate.com</p>
+            <p><strong>Hours:</strong> Mon-Fri 9AM-6PM, Sat 10AM-4PM</p>
+        </div>
+
+                    <div class="info-card about-us" id="company-info-page">
+                        <h3>About Elite Real Estate</h3>
+                        <p>Founded in 2010, Elite Real Estate has been helping clients find their dream homes for over 15 years. We specialize in luxury properties, commercial real estate, and investment opportunities across Egypt.</p>
+                        <p>Our team of experienced agents is dedicated to providing personalized service and expert guidance throughout your real estate journey.</p>
+                        <p><strong>Our Services:</strong></p>
+                        <ul>
+                            <li>Property Buying & Selling</li>
+                            <li>Rental Management</li>
+                            <li>Property Valuation</li>
+                            <li>Real Estate Investment Consulting</li>
+                            <li>Legal & Documentation Support</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Our Team</h3>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-avatar">MA</div>
+                            <h4>Marwan Ahmed</h4>
+                            <p>Manager<br>15+ years experience</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">AM</div>
+                            <h4>Abdullah Mahmoud</h4>
+                            <p>Assistant Manager<br>10+ years experience</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">AW</div>
+                            <h4>Ahmed Walid</h4>
+                            <p>Senior Agent</p>
+                        </div>
+                        <br>
+                        <div class="team-member">
+                            <div class="member-avatar">AA</div>
+                            <h4>Ahmed Abdelal</h4>
+                            <p>Commercial Properties<br>Expert</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">MA</div>
+                            <h4>Mohamed Ashraf</h4>
+                            <p>Luxury Properties<br>Specialist</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">AR</div>
+                            <h4>Mohamed Rafat</h4>
+                            <p>Recruitment Officer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Elite Real Estate. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/contact.js"></script>
+</body>
+</html>

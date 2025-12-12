@@ -1,0 +1,92 @@
+/* ==================== Details Page Styles ==================== */
+
+.details-section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 80vh;
+    background: white;
+}
+
+.property-detail-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: left;
+}
+
+.property-detail-content img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.property-detail-info {
+    flex-grow: 1;
+    min-width: 250px;
+}
+
+.property-detail-info h1 {
+    font-size: 36px;
+    color: #0a2c52;
+    margin-bottom: 10px;
+}
+
+.property-price {
+    font-size: 28px;
+    color: #0a2c52;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.property-location {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.property-description {
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+.features-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.features-list li {
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.property-detail-loading {
+    text-align: center;
+    padding: 40px;
+}
+
+.property-detail-loading h2 {
+    color: #0a2c52;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .property-detail-content {
+        flex-direction: column;
+    }
+    
+    .property-detail-content img {
+        max-width: 100%;
+    }
+    
+    .features-list {
+        grid-template-columns: 1fr;
+    }
+}
