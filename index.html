@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Real Estate - Login</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="logo-header">
+            <h1>Elite Real Estate</h1>
+            <p style="font-size: larger;"><strong>Find your dream home</strong></p>
+        </div>
+
+        <form id="login-form" class="form-section active">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username" required
+                   pattern="^[a-z][a-z0-9]*$" 
+                   title="Username must start with lowercase letters and can only contain lowercase letters and numbers">
+            <input type="password" id="login-password" placeholder="Password" required
+                   minlength="8" title="Password must be at least 8 characters">
+            <button type="submit">Login</button>
+            <p>No account? <span id="show-register">Register here</span></p>
+        </form>
+
+        <form id="register-form" class="form-section">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="Username" required
+                   pattern="^[a-z][a-z0-9]*$"
+                   title="Username must start with lowercase letters and can only contain lowercase letters and numbers">
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="tel" id="register-phone" placeholder="Phone Number (Optional)" 
+                   pattern="[0-9]{10,15}" 
+                   title="Phone number should be 10-15 digits"
+                   autocomplete="tel">
+            <input type="password" id="register-password" placeholder="Password" required
+                   minlength="8" title="Password must be at least 8 characters">
+            <input type="password" id="register-password-confirm" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+            <p>Already have an account? <span id="show-login">Login here</span></p>
+        </form>
+    </div>
+
+    <script src="scripts/auth.js"></script>
+</body>
+</html>
